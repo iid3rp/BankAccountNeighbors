@@ -5,6 +5,8 @@
  *  having maturity within months, and the Certification of Deposit creating of monthly
  *  statements each month.
  *
+ * @see BankAccount
+ *
  * @author Francis (iid3rp) Madanlo
  */
 public class CertificateOfDeposit extends BankAccount
@@ -143,7 +145,9 @@ public class CertificateOfDeposit extends BankAccount
     /**
      * The withdrawal method that would decrease the balance based on the hypothetical amount would
      * the bank account like to withdraw with the condition that the balance should be greater than the
-     * parameter (amount) in which to be withdrawn to the bank account.
+     * parameter (amount) in which to be withdrawn to the bank account. it should also increment the
+     * month of the Certificate of Deposit each withdraw. additionally, print the monthly statement after.
+     *
      * @param amount the amount value that should be withdrawn to the bank account
      */
     @Override
@@ -151,6 +155,7 @@ public class CertificateOfDeposit extends BankAccount
     {
         super.withdraw(amount);
         currentCDMonth++;
+        this.createMonthlyStatement();
     }
 
     /**
@@ -165,13 +170,6 @@ public class CertificateOfDeposit extends BankAccount
         }
     }
 
-    /**
-     * the void method {@code createMonthlyStatement()} is a part of the abstract blueprint from
-     * {@code BankAccount } class to be instantiated
-     * with its subclasses in which the goal of the method is to print the hypothetical monthly
-     * statement of the bank account when trying to call this method in which it will print a {@code
-     * toString() method of the subclass}.
-     */
     @Override
     public void createMonthlyStatement()
     {
@@ -181,7 +179,7 @@ public class CertificateOfDeposit extends BankAccount
     /**
      *  Returns a string representation of the {@code CertificateOfDeposit} class that returns the data
      *  as a String constructed for readability and reference of what are the contents
-     *  of the Certificate of Deposit.
+     *  of the Certificate of Deposit object.
      * @return String value of the constructed Certificate of Deposit object
      */
     @Override

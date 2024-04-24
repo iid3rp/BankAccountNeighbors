@@ -75,13 +75,17 @@ public abstract class BankAccount
      * statement of the bank account when trying to call this method in which it will print a {@code
      * toString() method of the subclass}.
      *
-     * <p>It should look like this in subclasses: </p>
+     * <p></p><p>It should look like this in subclasses: </p>
      * <blockquote><pre>
-     *  //@Override
-     *  public void createMonthlyStatement()
+     *  {@code
+     *  public class SomeClass extends BankAccount
      *  {
-     *      System.out.println(this);
-     *  } </pre></blockquote>
+     *      @Override
+     *      public void createMonthlyStatement()
+     *      {
+     *          System.out.println(this);
+     *      }
+     *  }} </pre></blockquote>
      */
     public abstract void createMonthlyStatement();
 
@@ -143,7 +147,7 @@ public abstract class BankAccount
      */
     public void withdraw(double amount)
     {
-        this.balance = balance >= amount? balance - amount : balance;
+        this.balance = balance > amount? balance - amount : balance;
     }
 
     /**
@@ -157,6 +161,6 @@ public abstract class BankAccount
     {
         return  "Name: " + name + "\n" +
                 "Account Number: " + accountNumber + "\n" +
-                "Balance: " + balance + "\n" + accountHolder;
+                "Balance: " + balance + "\n" + accountHolder + "\n";
     }
 }

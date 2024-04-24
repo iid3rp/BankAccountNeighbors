@@ -1,3 +1,6 @@
+/**
+ *
+ */
 public class HighInterestSavings extends SavingsAccount
 {
     private static final double MINIMUM_BALANCE = 2_500d;

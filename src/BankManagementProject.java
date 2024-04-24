@@ -36,5 +36,10 @@ public class BankManagementProject
         // re-create the monthly statement...
         h1.createMonthlyStatement();
         h2.createMonthlyStatement();
+        System.out.println();
+
+        NoServiceChargeChecking referenced = new NoServiceChargeChecking("Aize", 12345, 100);
+        referenced.withdraw(20);
+        referenced.createMonthlyStatement();
     }
 }
