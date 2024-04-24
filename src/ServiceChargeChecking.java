@@ -53,9 +53,9 @@ public class ServiceChargeChecking extends CheckingAccount
         System.out.println("Service Charges: " + getServiceChargeCheck());
     }
 
-    public void writeCheck(double check)
+    public void writeCheck(double amount)
     {
-        setServiceChargeCheck(check);
+        setServiceChargeCheck(amount);
     }
 
     @Override

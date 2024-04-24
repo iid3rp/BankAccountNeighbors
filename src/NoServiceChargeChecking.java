@@ -1,7 +1,13 @@
+/**
+ * h
+ */
 public class NoServiceChargeChecking extends CheckingAccount
 {
     private static final double MIN_BALANCE = 1000d;
     public static final double INTEREST_RATE = 0.02d;
+    /**
+     *
+     */
     protected double minimumBalance;
     protected double interestRate;
 
@@ -49,7 +55,13 @@ public class NoServiceChargeChecking extends CheckingAccount
     }
 
     @Override
-    public void writeCheck(double check)
+    public void withdraw(double amount)
+    {
+        super.withdraw(amount);
+    }
+
+    @Override
+    public void writeCheck(double amount)
     {
 
     }

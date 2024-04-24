@@ -1,3 +1,6 @@
+/**
+ *
+ */
 public class HighInterestChecking extends NoServiceChargeChecking
 {
     private static final double INTEREST_RATE = 0.05d;

@@ -3,7 +3,8 @@ public class BankManagementProject
 {
     public static void main(String[] a)
     {
-        BankAccount account;
+        BankAccount reference;
+        BankAccount x;
         SavingsAccount savingsAccount = new SavingsAccount("Francis Madanlo", 12345, 234.99);
         // System.out.println(savingsAccount);
 
