@@ -24,7 +24,7 @@ public class HighInterestChecking extends NoServiceChargeChecking
      * @param accountNumber the account number associated at the checking account
      * @param balance the balance of the checking account.
      */
-    public HighInterestChecking(String name, int accountNumber, double balance)
+    public HighInterestChecking(String name, long accountNumber, double balance)
     {
         super(name, accountNumber, balance);
     }
@@ -38,7 +38,7 @@ public class HighInterestChecking extends NoServiceChargeChecking
      * @param minimumBalance the minimum balance which will be the guidance of the checking account
      * @param interestRate the interest rate of the current checking account object
      */
-    public HighInterestChecking(String name, int accountNumber, double balance, double minimumBalance, double interestRate)
+    public HighInterestChecking(String name, long accountNumber, double balance, double minimumBalance, double interestRate)
     {
         super(name, accountNumber, balance, interestRate, minimumBalance);
     }

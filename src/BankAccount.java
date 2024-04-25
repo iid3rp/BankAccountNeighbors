@@ -61,7 +61,7 @@ public abstract class BankAccount
      * @param accountNumber  the associated account number of the bank account
      * @param balance The initial balance of the bank account
      */
-    public BankAccount(String name, int accountNumber, double balance)
+    public BankAccount(String name, long accountNumber, double balance)
     {
         this.name = name;
         this.accountNumber = accountNumber;
@@ -75,7 +75,7 @@ public abstract class BankAccount
      * statement of the bank account when trying to call this method in which it will print a {@code
      * toString() method of the subclass}.
      *
-     * <p></p><p>It should look like this in subclasses: </p>
+     * <p></p><p>It should look like this in subclasses:</p><p></p>
      * <blockquote><pre>
      *  {@code
      *  public class SomeClass extends BankAccount

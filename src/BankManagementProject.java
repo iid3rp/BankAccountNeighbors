@@ -1,11 +1,9 @@
-import Person.Person;
 public class BankManagementProject
 {
     public static void main(String[] a)
     {
-        BankAccount reference;
         BankAccount x;
-        SavingsAccount savingsAccount = new SavingsAccount("Francis Madanlo", 12345, 234.99);
+        SavingsAccount savingsAccount = new SavingsAccount("Francis Madanlo", 123454, 234.99);
         // System.out.println(savingsAccount);
 
         HighInterestSavings h1 = new HighInterestSavings("Francis L. Madanlo", 12345, 5000d, .05d,1000d);
@@ -32,7 +30,7 @@ public class BankManagementProject
         h1.accountHolder.setPerson("Francis L. Madanlo", "Davao City", "10/17/2005", "none");
         System.out.println(h1.accountHolder);
 
-        Person p = new Person("g", "g", "ugsdkj", "df");
+
         // re-create the monthly statement...
         h1.createMonthlyStatement();
         h2.createMonthlyStatement();

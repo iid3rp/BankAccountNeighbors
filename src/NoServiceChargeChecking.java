@@ -34,7 +34,7 @@ public class NoServiceChargeChecking extends CheckingAccount
      * @param accountNumber the account number associated at the checking account
      * @param balance the balance of the checking account.
      */
-    public NoServiceChargeChecking(String name, int accountNumber, double balance)
+    public NoServiceChargeChecking(String name, long accountNumber, double balance)
     {
         super(name, accountNumber, balance);
         this.interestRate = INTEREST_RATE;
@@ -51,7 +51,7 @@ public class NoServiceChargeChecking extends CheckingAccount
      * @param minimumBalance the minimum balance in which the checking account will limit.
      * @param interestRate the actual interest rate of the current NoServiceChargeChecking object
      */
-    public NoServiceChargeChecking(String name, int accountNumber, double balance, double minimumBalance, double interestRate)
+    public NoServiceChargeChecking(String name, long accountNumber, double balance, double minimumBalance, double interestRate)
     {
         super(name, accountNumber, balance);
         this.interestRate = interestRate;

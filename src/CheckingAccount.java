@@ -17,7 +17,7 @@ public abstract class CheckingAccount extends BankAccount
      * @param accountNumber the account number of the bank account
      * @param balance the balance that associates within the bank account
      */
-    public CheckingAccount(String name, int accountNumber, double balance)
+    public CheckingAccount(String name, long accountNumber, double balance)
     {
         super(name, accountNumber, balance);
     }

@@ -159,7 +159,8 @@ public class CertificateOfDeposit extends BankAccount
     }
 
     /**
-     * The withdrawal method that would flush the whole balance, basically withdraw all
+     * The withdrawal method that would flush the whole balance with the condition that
+     * the current Certificate of Deposit has reached the maturity months, basically withdraw all
      * the (hypothetical) money you have..
      */
     public void withdraw()

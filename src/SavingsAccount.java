@@ -14,7 +14,7 @@ public class SavingsAccount extends BankAccount
     private static final double INTEREST_RATE = .03d;
 
     /**
-     * constant variable that will be the actual interest rate
+     * actual variable that will be the actual interest rate
      */
     protected double interestRate;
 
@@ -27,7 +27,7 @@ public class SavingsAccount extends BankAccount
      * @param accountNumber the associated account number of the bank account
      * @param balance The initial balance of the bank account
      */
-    public SavingsAccount(String name, int accountNumber, double balance)
+    public SavingsAccount(String name, long accountNumber, double balance)
     {
         super(name, accountNumber, balance);
         interestRate = INTEREST_RATE;
@@ -43,7 +43,7 @@ public class SavingsAccount extends BankAccount
      * @param balance The initial balance of the bank account
      * @param interestRate the actual interest rate of the savings account
      */
-    public SavingsAccount(String name, int accountNumber, double balance, double interestRate)
+    public SavingsAccount(String name, long accountNumber, double balance, double interestRate)
     {
         super(name, accountNumber, balance);
         this.interestRate = interestRate;
