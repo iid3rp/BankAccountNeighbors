@@ -43,16 +43,26 @@ public class HighInterestChecking extends NoServiceChargeChecking
         super(name, accountNumber, balance, interestRate, minimumBalance);
     }
 
+    /**
+     * the getter of the HighInterestChecking class that returns the double value of the current interest rate
+     * of the checking account
+     * @return the double value of the interest rate of the checking account.
+     */
     @Override
     public double getInterestRate()
     {
         return super.getInterestRate();
     }
 
+    /**
+     * the setter of the HighInterestChecking class that re-initialize the value of the interest rate of the
+     * current HighInterestChecking object.
+     * @param interestRate the value of the interestRate account
+     */
     @Override
-    public void setInterestRate(double amount)
+    public void setInterestRate(double interestRate)
     {
-        super.setInterestRate(amount);
+        super.setInterestRate(interestRate);
     }
 
     /**

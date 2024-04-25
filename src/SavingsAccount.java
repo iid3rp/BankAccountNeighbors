@@ -85,7 +85,7 @@ public class SavingsAccount extends BankAccount
     }
 
     /**
-     *  Returns a string representation of the {@code CertificateOfDeposit} class that returns the data
+     *  Returns a string representation of the {@code SavingsAccount} class that returns the data
      *  as a String constructed for readability and reference of what are the contents
      *  of the savings account object.
      * @return String value of the constructed savings account object

@@ -27,8 +27,9 @@ public class HighInterestSavings extends SavingsAccount
     protected double minimumBalance;
 
     /**
-     * the constructor of HighInterestSavings class with parameters that initializes the class, and also the superclass with parameters.
-     * but its minimum balance will have default methods from the constant methods.
+     * the constructor of HighInterestSavings class with parameters that initializes the class,
+     * and also the superclass with parameters. but its minimum balance will have default methods
+     * from the constant methods.
      * @param name the name of the checking account.
      * @param accountNumber the account number associated at the checking account
      * @param balance the balance of the checking account.
@@ -40,8 +41,9 @@ public class HighInterestSavings extends SavingsAccount
     }
 
     /**
-     * the constructor of HighInterestSavings class with parameters that initializes the class, and also the superclass with parameters.
-     * the interest rate will also initialize based on the parameters.
+     * the constructor of HighInterestSavings class with parameters that initializes the class,
+     * and also the superclass with parameters. the interest rate will also initialize based
+     * on the parameters.
      *
      * @param name the name of the checking account.
      * @param accountNumber the account number associated at the checking account
