@@ -139,6 +139,11 @@ public class NoServiceChargeChecking extends CheckingAccount
     @Override
     public void writeCheck(double amount)
     {
-
+        if(balance > amount)
+        {
+            withdraw(amount);
+            System.out.println(); // check information
+        }
     }
 }
+

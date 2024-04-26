@@ -9,6 +9,24 @@ import Person.Person;
  * name, balance, and methods like deposit, withdraw, and its abstract method
  * that checks the monthly statement of our bank account that lays out a framework for
  * subclasses to inherit and implement according to their specific requirements.
+ * <p></p>
+ * In the real world, a bank account acts like a secure container for your money at a bank.
+ * It's like a special box where you can deposit cash or checks to add funds, withdraw
+ * cash when you need it, and keep track of your current balance.  Some accounts might even
+ * earn you interest, like a small reward for keeping your money there. It's where the other
+ * types of bank accounts make use of. Like checking accounts, savings accounts, and Certificate
+ * of Deposits.
+ *
+ * @apiNote There should be no type of bank account that extends a
+ * {@code BankAccount} class that's by itself. It is intended to make use of this class
+ * on its subclasses.
+ *
+ * @see SavingsAccount
+ * @see HighInterestSavings
+ * @see CertificateOfDeposit
+ * @see ServiceChargeChecking
+ * @see NoServiceChargeChecking
+ * @see HighInterestChecking
  *
  * @author Francis (iid3rp) Madanlo
  */
@@ -72,7 +90,8 @@ public abstract class BankAccount
     /**
      * the abstract method {@code createMonthlyStatement()} is a blueprint to be instantiated
      * with its subclasses in which the goal of the method is to print the hypothetical monthly
-     * statement of the bank account when trying to call this method in which it will print a {@code
+     * statement of any class that extends a class that might potentially extend this class
+     * when trying to call this method in which it will print a {@code
      * toString() method of the subclass}.
      *
      * <p></p><p>It should look like this in subclasses:</p><p></p>
@@ -85,7 +104,9 @@ public abstract class BankAccount
      *      {
      *          System.out.println(this);
      *      }
-     *  }} </pre></blockquote>
+     *  }
+     *  }
+     *  </pre></blockquote>
      */
     public abstract void createMonthlyStatement();
 

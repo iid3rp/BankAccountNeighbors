@@ -79,6 +79,5 @@ public class HighInterestChecking extends NoServiceChargeChecking
     {
         super.createMonthlyStatement();
     }
-
 }
 

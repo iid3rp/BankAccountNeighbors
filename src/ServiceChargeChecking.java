@@ -136,13 +136,6 @@ public class ServiceChargeChecking extends CheckingAccount
         balance = balance > accountServiceCharge? balance - accountServiceCharge : balance;
     }
 
-    /**
-     *  this is method from the {@code ServiceChargeChecking} class that generates a hypothetical check when you call this method.
-     *  It also withdraws and makes it a hypothetical check that will print the confirmation that the check has been made when validated
-     *
-     * @param amount the amount of would you like to make a che
-     *               ck with at the current checking account
-     */
     @Override
     public void writeCheck(double amount)
     {
